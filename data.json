@@ -1,0 +1,247 @@
+{
+  "permissions": [
+    {
+      "id": 1,
+      "module_id": "riskManagement",
+      "module_rank": 1,
+      "is_workbook": false,
+      "children": [
+        {
+          "id": 4,
+          "module_id": "cioTools",
+          "module_rank": 1,
+          "is_workbook": false,
+          "children": [
+            {
+              "id": 20,
+              "module_id": "portfolioVolatility",
+              "module_rank": 1,
+              "is_workbook": false,
+              "children": [
+                
+              ],
+              "label": "Portfolio Volatility"
+            },
+            {
+              "id": 21,
+              "module_id": "coreRiskReport",
+              "module_rank": 2,
+              "is_workbook": false,
+              "children": [
+                
+              ],
+              "label": "Risk Summary"
+            }
+          ],
+          "label": "CIO Tools",
+          "hasPermission": true
+        },
+        {
+          "id": 5,
+          "module_id": "portfolioTools",
+          "module_rank": 2,
+          "is_workbook": false,
+          "children": [
+            {
+              "id": 22,
+              "module_id": "realTimeRiskReporting-core",
+              "module_rank": 1,
+              "is_workbook": false,
+              "children": [
+                
+              ],
+              "label": "Risk Reporting - Core "
+            },
+            {
+              "id": 23,
+              "module_id": "realTimeRiskReporting-custom",
+              "module_rank": 2,
+              "is_workbook": false,
+              "children": [
+                
+              ],
+              "label": "Risk Reporting - Dynamic"
+            },
+            {
+              "id": 26,
+              "module_id": "intradayPortfolioAlpha",
+              "module_rank": 6,
+              "is_workbook": false,
+              "children": [
+                
+              ],
+              "label": "Intraday Portfolio Alpha"
+            },
+            {
+              "id": 27,
+              "module_id": "intradayFactorReturns",
+              "module_rank": 6,
+              "is_workbook": false,
+              "children": [
+                
+              ],
+              "label": "Intraday Factor Returns"
+            },
+            {
+              "id": 28,
+              "module_id": "intradayUniverseAlpha",
+              "module_rank": 7,
+              "is_workbook": false,
+              "children": [
+                
+              ],
+              "label": "Alpha Monitor-Universe Screen"
+            },
+            {
+              "id": 29,
+              "module_id": "intradayPortfolioDecomposition",
+              "module_rank": 8,
+              "is_workbook": false,
+              "children": [
+                
+              ],
+              "label": "Intraday Portfolio Decomposition"
+            }
+          ],
+          "label": "Portfolio Tools",
+          "hasPermission": true
+        },
+        {
+          "id": 6,
+          "module_id": "ideaGenerationTools",
+          "module_rank": 3,
+          "is_workbook": false,
+          "children": [
+            {
+              "id": 30,
+              "module_id": "writeUp",
+              "module_rank": 1,
+              "is_workbook": false,
+              "children": [
+                
+              ],
+              "label": "Write-Up"
+            },
+            {
+              "id": 31,
+              "module_id": "universeScreeningTool",
+              "module_rank": 2,
+              "is_workbook": false,
+              "children": [
+                
+              ],
+              "label": "Universe Screening tool "
+            },
+            {
+              "id": 32,
+              "module_id": "stockAnalyzer",
+              "module_rank": 3,
+              "is_workbook": false,
+              "children": [
+                
+              ],
+              "label": "Stock Explorer"
+            }
+          ],
+          "label": "Idea Generation Tools",
+          "hasPermission": true
+        },
+        {
+          "id": 7,
+          "module_id": "performanceAnalytics",
+          "module_rank": 4,
+          "is_workbook": false,
+          "children": [
+            {
+              "id": 33,
+              "module_id": "intradaySpread",
+              "module_rank": 1,
+              "is_workbook": false,
+              "children": [
+                
+              ],
+              "label": "Intraday Spread"
+            }
+          ],
+          "label": "Performance Analytics",
+          "hasPermission": true
+        }
+      ],
+      "label": "Risk Management",
+      "hasPermission": true
+    },
+    {
+      "id": 2,
+      "module_id": "investmentResearch",
+      "module_rank": 2,
+      "is_workbook": false,
+      "children": [
+        {
+          "id": 8,
+          "module_id": "macro",
+          "module_rank": 1,
+          "is_workbook": false,
+          "children": [
+            
+          ],
+          "label": "Macro",
+          "hasPermission": false
+        },
+        {
+          "id": 9,
+          "module_id": "financials",
+          "module_rank": 2,
+          "is_workbook": false,
+          "children": [
+            {
+              "id": 101,
+              "module_id": "01bb524e-19f0-4795-ab04-d71e78b10dd511418b3b-3d1b-4a1d-be0b-f36edd5cb9db",
+              "module_rank": 1,
+              "is_workbook": true,
+              "children": [
+                
+              ],
+              "label": "BankScrape",
+              "checked": false
+            }
+          ],
+          "label": "Financials",
+          "hasPermission": false
+        }
+      ],
+      "label": "Investment Research",
+      "hasPermission": false
+    },
+    {
+      "id": 3,
+      "module_id": "tradingTools",
+      "module_rank": 3,
+      "is_workbook": false,
+      "children": [
+        {
+          "id": 18,
+          "module_id": "basketDecomp",
+          "module_rank": 3,
+          "is_workbook": false,
+          "children": [
+            
+          ],
+          "label": "Basket Decomp"
+        },
+        {
+          "id": 19,
+          "module_id": "basketExposure",
+          "module_rank": 4,
+          "is_workbook": false,
+          "children": [
+            
+          ],
+          "label": "Basket Exposure"
+        }
+      ],
+      "label": "Trading Tools ",
+      "hasPermission": true
+    }
+  ]
+  
+}

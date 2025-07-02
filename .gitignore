@@ -1,0 +1,18 @@
+# Ignore output
+permissions.csv
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# Ignore virtual environments
+env/
+.env/
+
+# Ignore large data or misc
+*.zip
+*.tar
+*.gz
