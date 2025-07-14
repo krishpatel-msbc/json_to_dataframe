@@ -1,247 +1,404 @@
 {
-  "permissions": [
+  "users": [
     {
-      "id": 1,
-      "module_id": "riskManagement",
-      "module_rank": 1,
-      "is_workbook": false,
-      "children": [
+      "user_id": 1,
+      "name": "Alice Sharma",
+      "permissions": [
         {
-          "id": 4,
-          "module_id": "cioTools",
+          "id": 1,
+          "module_id": "riskManagement",
           "module_rank": 1,
           "is_workbook": false,
           "children": [
             {
-              "id": 20,
-              "module_id": "portfolioVolatility",
+              "id": 4,
+              "module_id": "cioTools",
               "module_rank": 1,
               "is_workbook": false,
               "children": [
-                
+                {
+                  "id": 20,
+                  "module_id": "portfolioVolatility",
+                  "module_rank": 1,
+                  "is_workbook": false,
+                  "children": [],
+                  "label": "Portfolio Volatility",
+                  "hasPermission": false
+                },
+                {
+                  "id": 21,
+                  "module_id": "coreRiskReport",
+                  "module_rank": 2,
+                  "is_workbook": false,
+                  "children": [],
+                  "label": "Risk Summary",
+                  "hasPermission": true
+                }
               ],
-              "label": "Portfolio Volatility"
+              "label": "CIO Tools",
+              "hasPermission": false
             },
             {
-              "id": 21,
-              "module_id": "coreRiskReport",
+              "id": 5,
+              "module_id": "portfolioTools",
               "module_rank": 2,
               "is_workbook": false,
               "children": [
-                
+                {
+                  "id": 22,
+                  "module_id": "realTimeRiskReporting-core",
+                  "module_rank": 1,
+                  "is_workbook": false,
+                  "children": [],
+                  "label": "Risk Reporting - Core",
+                  "hasPermission": true
+                },
+                {
+                  "id": 23,
+                  "module_id": "realTimeRiskReporting-custom",
+                  "module_rank": 2,
+                  "is_workbook": false,
+                  "children": [],
+                  "label": "Risk Reporting - Dynamic",
+                  "hasPermission": false
+                }
               ],
-              "label": "Risk Summary"
+              "label": "Portfolio Tools",
+              "hasPermission": true
             }
           ],
-          "label": "CIO Tools",
-          "hasPermission": true
+          "label": "Risk Management",
+          "hasPermission": false
         },
         {
-          "id": 5,
-          "module_id": "portfolioTools",
+          "id": 2,
+          "module_id": "investmentResearch",
           "module_rank": 2,
           "is_workbook": false,
           "children": [
             {
-              "id": 22,
-              "module_id": "realTimeRiskReporting-core",
+              "id": 8,
+              "module_id": "macro",
               "module_rank": 1,
               "is_workbook": false,
-              "children": [
-                
-              ],
-              "label": "Risk Reporting - Core "
-            },
-            {
-              "id": 23,
-              "module_id": "realTimeRiskReporting-custom",
-              "module_rank": 2,
-              "is_workbook": false,
-              "children": [
-                
-              ],
-              "label": "Risk Reporting - Dynamic"
-            },
-            {
-              "id": 26,
-              "module_id": "intradayPortfolioAlpha",
-              "module_rank": 6,
-              "is_workbook": false,
-              "children": [
-                
-              ],
-              "label": "Intraday Portfolio Alpha"
-            },
-            {
-              "id": 27,
-              "module_id": "intradayFactorReturns",
-              "module_rank": 6,
-              "is_workbook": false,
-              "children": [
-                
-              ],
-              "label": "Intraday Factor Returns"
-            },
-            {
-              "id": 28,
-              "module_id": "intradayUniverseAlpha",
-              "module_rank": 7,
-              "is_workbook": false,
-              "children": [
-                
-              ],
-              "label": "Alpha Monitor-Universe Screen"
-            },
-            {
-              "id": 29,
-              "module_id": "intradayPortfolioDecomposition",
-              "module_rank": 8,
-              "is_workbook": false,
-              "children": [
-                
-              ],
-              "label": "Intraday Portfolio Decomposition"
+              "children": [],
+              "label": "Macro",
+              "hasPermission": true
             }
           ],
-          "label": "Portfolio Tools",
-          "hasPermission": true
-        },
-        {
-          "id": 6,
-          "module_id": "ideaGenerationTools",
-          "module_rank": 3,
-          "is_workbook": false,
-          "children": [
-            {
-              "id": 30,
-              "module_id": "writeUp",
-              "module_rank": 1,
-              "is_workbook": false,
-              "children": [
-                
-              ],
-              "label": "Write-Up"
-            },
-            {
-              "id": 31,
-              "module_id": "universeScreeningTool",
-              "module_rank": 2,
-              "is_workbook": false,
-              "children": [
-                
-              ],
-              "label": "Universe Screening tool "
-            },
-            {
-              "id": 32,
-              "module_id": "stockAnalyzer",
-              "module_rank": 3,
-              "is_workbook": false,
-              "children": [
-                
-              ],
-              "label": "Stock Explorer"
-            }
-          ],
-          "label": "Idea Generation Tools",
-          "hasPermission": true
-        },
-        {
-          "id": 7,
-          "module_id": "performanceAnalytics",
-          "module_rank": 4,
-          "is_workbook": false,
-          "children": [
-            {
-              "id": 33,
-              "module_id": "intradaySpread",
-              "module_rank": 1,
-              "is_workbook": false,
-              "children": [
-                
-              ],
-              "label": "Intraday Spread"
-            }
-          ],
-          "label": "Performance Analytics",
+          "label": "Investment Research",
           "hasPermission": true
         }
-      ],
-      "label": "Risk Management",
-      "hasPermission": true
+      ]
     },
     {
-      "id": 2,
-      "module_id": "investmentResearch",
-      "module_rank": 2,
-      "is_workbook": false,
-      "children": [
+      "user_id": 2,
+      "name": "Brian D'Souza",
+      "permissions": [
         {
-          "id": 8,
-          "module_id": "macro",
+          "id": 10,
+          "module_id": "analyticsSuite",
           "module_rank": 1,
           "is_workbook": false,
           "children": [
-            
+            {
+              "id": 40,
+              "module_id": "alphaTools",
+              "module_rank": 1,
+              "is_workbook": false,
+              "children": [
+                {
+                  "id": 200,
+                  "module_id": "alphaTrends",
+                  "module_rank": 1,
+                  "is_workbook": false,
+                  "children": [],
+                  "label": "Alpha Trends",
+                  "hasPermission": false
+                },
+                {
+                  "id": 201,
+                  "module_id": "factorRisk",
+                  "module_rank": 2,
+                  "is_workbook": false,
+                  "children": [],
+                  "label": "Factor Risk",
+                  "hasPermission": true
+                }
+              ],
+              "label": "Alpha Tools",
+              "hasPermission": false
+            },
+            {
+              "id": 41,
+              "module_id": "betaTools",
+              "module_rank": 2,
+              "is_workbook": false,
+              "children": [
+                {
+                  "id": 202,
+                  "module_id": "betaExposure",
+                  "module_rank": 1,
+                  "is_workbook": false,
+                  "children": [],
+                  "label": "Beta Exposure",
+                  "hasPermission": true
+                }
+              ],
+              "label": "Beta Tools",
+              "hasPermission": true
+            }
           ],
-          "label": "Macro",
+          "label": "Analytics Suite",
           "hasPermission": false
         },
         {
-          "id": 9,
-          "module_id": "financials",
+          "id": 11,
+          "module_id": "marketResearch",
           "module_rank": 2,
           "is_workbook": false,
           "children": [
             {
-              "id": 101,
-              "module_id": "01bb524e-19f0-4795-ab04-d71e78b10dd511418b3b-3d1b-4a1d-be0b-f36edd5cb9db",
+              "id": 50,
+              "module_id": "sectorAnalysis",
               "module_rank": 1,
-              "is_workbook": true,
-              "children": [
-                
-              ],
-              "label": "BankScrape",
-              "checked": false
+              "is_workbook": false,
+              "children": [],
+              "label": "Sector Analysis",
+              "hasPermission": false
+            },
+            {
+              "id": 51,
+              "module_id": "globalTrends",
+              "module_rank": 2,
+              "is_workbook": false,
+              "children": [],
+              "label": "Global Trends",
+              "hasPermission": true
             }
           ],
-          "label": "Financials",
-          "hasPermission": false
-        }
-      ],
-      "label": "Investment Research",
-      "hasPermission": false
-    },
-    {
-      "id": 3,
-      "module_id": "tradingTools",
-      "module_rank": 3,
-      "is_workbook": false,
-      "children": [
+          "label": "Market Research",
+          "hasPermission": true
+        },
         {
-          "id": 18,
-          "module_id": "basketDecomp",
+          "id": 12,
+          "module_id": "tradingTools",
           "module_rank": 3,
           "is_workbook": false,
           "children": [
-            
+            {
+              "id": 60,
+              "module_id": "tradeMonitor",
+              "module_rank": 1,
+              "is_workbook": false,
+              "children": [],
+              "label": "Trade Monitor",
+              "hasPermission": false
+            }
           ],
-          "label": "Basket Decomp"
-        },
+          "label": "Trading Tools",
+          "hasPermission": false
+        }
+      ]
+    },
+    {
+      "user_id": 3,
+      "name": "Chitra Patel",
+      "permissions": [
         {
-          "id": 19,
-          "module_id": "basketExposure",
-          "module_rank": 4,
+          "id": 20,
+          "module_id": "riskManagement",
+          "module_rank": 1,
           "is_workbook": false,
           "children": [
-            
+            {
+              "id": 80,
+              "module_id": "stressTesting",
+              "module_rank": 1,
+              "is_workbook": false,
+              "children": [
+                {
+                  "id": 300,
+                  "module_id": "liquidityStress",
+                  "module_rank": 1,
+                  "is_workbook": false,
+                  "children": [],
+                  "label": "Liquidity Stress",
+                  "hasPermission": false
+                }
+              ],
+              "label": "Stress Testing",
+              "hasPermission": false
+            }
           ],
-          "label": "Basket Exposure"
+          "label": "Risk Management",
+          "hasPermission": true
+        },
+        {
+          "id": 21,
+          "module_id": "investmentResearch",
+          "module_rank": 2,
+          "is_workbook": false,
+          "children": [
+            {
+              "id": 90,
+              "module_id": "equityResearch",
+              "module_rank": 1,
+              "is_workbook": false,
+              "children": [
+                {
+                  "id": 400,
+                  "module_id": "stockScreening",
+                  "module_rank": 1,
+                  "is_workbook": false,
+                  "children": [],
+                  "label": "Stock Screening",
+                  "hasPermission": false
+                }
+              ],
+              "label": "Equity Research",
+              "hasPermission": false
+            },
+            {
+              "id": 91,
+              "module_id": "fixedIncomeResearch",
+              "module_rank": 2,
+              "is_workbook": false,
+              "children": [],
+              "label": "Fixed Income Research",
+              "hasPermission": true
+            }
+          ],
+          "label": "Investment Research",
+          "hasPermission": false
+        },
+        {
+          "id": 22,
+          "module_id": "portfolioManagement",
+          "module_rank": 3,
+          "is_workbook": false,
+          "children": [
+            {
+              "id": 100,
+              "module_id": "portfolioOptimization",
+              "module_rank": 1,
+              "is_workbook": false,
+              "children": [],
+              "label": "Portfolio Optimization",
+              "hasPermission": true
+            }
+          ],
+          "label": "Portfolio Management",
+          "hasPermission": false
         }
-      ],
-      "label": "Trading Tools ",
-      "hasPermission": true
+      ]
+    },
+    {
+      "user_id": 4,
+      "name": "Deepak Menon",
+      "permissions": [
+        {
+          "id": 30,
+          "module_id": "complianceSuite",
+          "module_rank": 1,
+          "is_workbook": false,
+          "children": [
+            {
+              "id": 120,
+              "module_id": "auditTools",
+              "module_rank": 1,
+              "is_workbook": false,
+              "children": [
+                {
+                  "id": 500,
+                  "module_id": "internalAudit",
+                  "module_rank": 1,
+                  "is_workbook": false,
+                  "children": [],
+                  "label": "Internal Audit",
+                  "hasPermission": true
+                }
+              ],
+              "label": "Audit Tools",
+              "hasPermission": false
+            }
+          ],
+          "label": "Compliance Suite",
+          "hasPermission": true
+        },
+        {
+          "id": 31,
+          "module_id": "operations",
+          "module_rank": 2,
+          "is_workbook": false,
+          "children": [
+            {
+              "id": 130,
+              "module_id": "opsDashboard",
+              "module_rank": 1,
+              "is_workbook": false,
+              "children": [],
+              "label": "Ops Dashboard",
+              "hasPermission": false
+            }
+          ],
+          "label": "Operations",
+          "hasPermission": false
+        }
+      ]
+    },
+    {
+      "user_id": 5,
+      "name": "Farah Khan",
+      "permissions": [
+        {
+          "id": 40,
+          "module_id": "clientReporting",
+          "module_rank": 1,
+          "is_workbook": false,
+          "children": [
+            {
+              "id": 140,
+              "module_id": "performanceReports",
+              "module_rank": 1,
+              "is_workbook": false,
+              "children": [],
+              "label": "Performance Reports",
+              "hasPermission": true
+            },
+            {
+              "id": 141,
+              "module_id": "feeReports",
+              "module_rank": 2,
+              "is_workbook": false,
+              "children": [],
+              "label": "Fee Reports",
+              "hasPermission": false
+            }
+          ],
+          "label": "Client Reporting",
+          "hasPermission": false
+        },
+        {
+          "id": 41,
+          "module_id": "crm",
+          "module_rank": 2,
+          "is_workbook": false,
+          "children": [
+            {
+              "id": 150,
+              "module_id": "contactManagement",
+              "module_rank": 1,
+              "is_workbook": false,
+              "children": [],
+              "label": "Contact Management",
+              "hasPermission": true
+            }
+          ],
+          "label": "CRM",
+          "hasPermission": true
+        }
+      ]
     }
   ]
-  
 }
