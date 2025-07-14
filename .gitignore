@@ -1,18 +1,60 @@
-# Ignore output
-permissions.csv
-
-# Python cache
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 
-# Logs
-*.log
+# C extensions
+*.so
 
-# Ignore virtual environments
-env/
+# Virtual environment
 .env/
+env/
+venv/
+ENV/
+.venv/
+env.bak/
+venv.bak/
 
-# Ignore large data or misc
-*.zip
-*.tar
-*.gz
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VSCode settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# SQL Server auth backup files
+*.bak
+*.sql
+
+# Data files
+*.db
+*.sqlite3
+*.log
+*.csv
+
+# JSON input/output files
+data.json
+output.json
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python project specific
+*.pyo
+*.pyd
+*.pdb
+
+# Test cache
+.cache/
+.pytest_cache/
+
+# pipenv
+Pipfile.lock
+
+# Ignore secrets if any (customize if you name them differently)
+secrets.json
+config.json

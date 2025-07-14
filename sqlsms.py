@@ -75,3 +75,6 @@ cursor.close()
 conn.close()
 
 print("Upload complete. New data inserted into SQL Server.")
+
+df.to_csv("sqlpermissions.csv", index = False)
+print(df.to_csv(index=False))
