@@ -1,3 +1,9 @@
+"""
+For extracting user module permissions from a nested Json file
+Converting to a flat dataframe
+Upsert the results into a SQL Server table using SQL Server Authentication. 
+"""
+
 import pandas as pd
 import json
 from datetime import datetime, timezone
