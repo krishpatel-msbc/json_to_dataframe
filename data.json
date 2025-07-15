@@ -68,6 +68,24 @@
             }
           ],
           "label": "Risk Management",
+          "hasPermission": true
+        },
+        {
+          "id": 1901,
+          "module_id": "newModuleY",
+          "module_rank": 100,
+          "is_workbook": false,
+          "children": [],
+          "label": "New Module Y",
+          "hasPermission": true
+        },
+        {
+          "id": 1902,
+          "module_id": "newModuleZ",
+          "module_rank": 101,
+          "is_workbook": false,
+          "children": [],
+          "label": "New Module Z",
           "hasPermission": false
         },
         {
@@ -181,6 +199,15 @@
           "hasPermission": true
         },
         {
+          "id": 2101,
+          "module_id": "newModuleZ",
+          "module_rank": 199,
+          "is_workbook": false,
+          "children": [],
+          "label": "New Module Z",
+          "hasPermission": false
+        },
+        {
           "id": 12,
           "module_id": "tradingTools",
           "module_rank": 3,
@@ -193,11 +220,11 @@
               "is_workbook": false,
               "children": [],
               "label": "Trade Monitor",
-              "hasPermission": false
+              "hasPermission": true
             }
           ],
           "label": "Trading Tools",
-          "hasPermission": false
+          "hasPermission": true
         }
       ]
     },
@@ -232,6 +259,15 @@
             }
           ],
           "label": "Risk Management",
+          "hasPermission": true
+        },
+        {
+          "id": 3201,
+          "module_id": "newModuleX",
+          "module_rank": 300,
+          "is_workbook": false,
+          "children": [],
+          "label": "New Module X",
           "hasPermission": true
         },
         {
@@ -327,6 +363,15 @@
           "hasPermission": true
         },
         {
+          "id": 4301,
+          "module_id": "newModuleY",
+          "module_rank": 450,
+          "is_workbook": false,
+          "children": [],
+          "label": "New Module Y",
+          "hasPermission": false
+        },
+        {
           "id": 31,
           "module_id": "operations",
           "module_rank": 2,
@@ -339,11 +384,11 @@
               "is_workbook": false,
               "children": [],
               "label": "Ops Dashboard",
-              "hasPermission": false
+              "hasPermission": true
             }
           ],
           "label": "Operations",
-          "hasPermission": false
+          "hasPermission": true
         }
       ]
     },
@@ -377,7 +422,7 @@
             }
           ],
           "label": "Client Reporting",
-          "hasPermission": false
+          "hasPermission": true
         },
         {
           "id": 41,
@@ -396,6 +441,15 @@
             }
           ],
           "label": "CRM",
+          "hasPermission": true
+        },
+        {
+          "id": 5401,
+          "module_id": "newModuleX",
+          "module_rank": 510,
+          "is_workbook": false,
+          "children": [],
+          "label": "New Module X",
           "hasPermission": true
         }
       ]
