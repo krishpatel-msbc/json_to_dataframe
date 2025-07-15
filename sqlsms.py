@@ -41,47 +41,27 @@ conn_str = (
 conn = pyodbc.connect(conn_str)
 cursor = conn.cursor()
 
-# Create temporary staging table
-cursor.execute("""
-    IF OBJECT_ID('tempdb..#TempUserPermissions') IS NOT NULL DROP TABLE #TempUserPermissions;
-    CREATE TABLE #TempUserPermissions (
-        user_id NVARCHAR(255),
-        module_name NVARCHAR(255),
-        module_permission BIT,
-        updated_timestamp DATETIMEOFFSET
-    );
-""")
 conn.commit()
 
-# Bulk insert DataFrame into staging table using fast_executemany
-insert_temp = """
-    INSERT INTO #TempUserPermissions (user_id, module_name, module_permission, updated_timestamp)
+# Bulk insert into staging table
+insert_stmt = """
+    INSERT INTO JC.Staging_User_permissions (user_id, module_name, module_permission, updated_timestamp)
     VALUES (?, ?, ?, ?)
 """
 
 cursor.fast_executemany = True
-cursor.executemany(insert_temp, df.values.tolist())
+cursor.executemany(insert_stmt, df.values.tolist())
 conn.commit()
 
-# Merge from temp table into target table
-cursor.execute("""
-    MERGE JC.Users_permissions AS Target
-    USING #TempUserPermissions AS Source
-    ON Target.user_id = Source.user_id AND Target.module_name = Source.module_name
-    WHEN MATCHED AND Target.module_permission <> Source.module_permission THEN
-        UPDATE SET 
-            Target.module_permission = Source.module_permission,
-            Target.updated_timestamp = Source.updated_timestamp
-    WHEN NOT MATCHED BY TARGET THEN
-        INSERT (user_id, module_name, module_permission, updated_timestamp)
-        VALUES (Source.user_id, Source.module_name, Source.module_permission, Source.updated_timestamp);
-""")
+# Calling the stored procedure to Merge into target table
+cursor.execute("EXEC JC.MergeUserPermissions;")
 conn.commit()
 
 cursor.close()
 conn.close()
 
-print("Upload complete. Data merged using temp table.")
+print("Upload complete. Data merged via Stored Procedure.")
+
 
 # Save result to CSV
 df.to_csv("sqlpermissions.csv", index=False)
