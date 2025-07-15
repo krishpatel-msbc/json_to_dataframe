@@ -1,3 +1,8 @@
+"""
+Extracts user module permissions from a nested JSON structure using custom inheritance rules.
+Traverses each user's permission tree with conditional logic to flatten it into a user-module matrix.
+The result is saved as a CSV file with users as rows and module permissions as boolean columns.
+"""
 import json
 import pandas as pd
 

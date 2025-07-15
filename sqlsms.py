@@ -1,3 +1,9 @@
+"""
+Parses a nested JSON of user module permissions into a flat DataFrame.
+Uploads the data into a SQL Server staging table using bulk insert.
+Then executes a stored procedure to merge the staging data into the main table.
+Also saves a local CSV copy of the permissions for audit or debug purposes.
+"""
 import pandas as pd
 import json
 from datetime import datetime, timezone
